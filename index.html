@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1 id="inicio" style="text-align: center;">ATIVIDADE DE JAVASCRIPT DO 4° BIMESTRE</h1>
+  </header>
+  
+  <p style="text-align: center;">Essa atividade compreende a criação de diversos programas em javascript com diversas finalidades, observe a lista de questões:</p>
+  
+  <div class="quest">
+    <h2 id="quest1">QUESTÃO 1</h2>
+    <hr>
+    <p>Escreva três números e clique no botão para calcular a média:</p>
+    <input class="inputstilo" type="number" id="input1" placeholder="ex: 20">
+    <input class="inputstilo" type="number" id="input2" placeholder="ex: 30">
+    <input class="inputstilo" type="number" id="input3" placeholder="ex: 40">
+    <button class="botao" type="button" onclick="questao1()">Calcular</button>
+    <p id='resposta1'></p>
+    
+    <h2 id="quest2">QUESTÃO 2</h2>
+    <hr>
+    <p>Digite o valor do lado do quadrado e aperte no botão para calcular a área e perimetro:</p>
+    <input class="inputstilo" type="number" id="inputquad" placeholder="ex: 10">
+    <button class="botao" type="button" onclick="questao2()">Calcular</button>
+    <p id='resposta2'></p>
+    <p id='resposta3'></p>
+    
+    <h2 id="quest3">QUESTÃO 3</h2>
+    <hr>
+    <p>Digite um número positivo e clique no botão para ver seu dobro, triplo, quadrado e raiz</p>
+    <input class="inputstilo" type="number" id="inputnumero" placeholder="ex: 5">
+    <button class="botao" type="button" onclick="questao3()">Calcular</button>
+    <p id='resposta4'></p>
+    <p id='resposta5'></p>
+    <p id='resposta6'></p>
+    <p id='resposta7'></p>
+    
+    <h2 id="quest4">QUESTÃO 4</h2>
+    <hr>
+    <p>Digite o raio de uma circunferencia e clique no botão para ver a área e comprimento:</p>
+    <input class="inputstilo" type="number" id="inputraio" placeholder="ex: 5">
+    <button class="botao" type="button" onclick="questao4()">Calcular</button>
+    <p id='resposta8'></p>
+    <p id='resposta9'></p>
+
+    
+    <h2 id="quest5">QUESTÃO 5</h2>
+    <hr>
+    <p>Digite o valor da base e altura de um triangulo e clique no botão para ver sua área:</p>
+    <input class="inputstilo" type="number" id="inputaltura" placeholder="Altura">
+    <input class="inputstilo" type="number" id="inputbase" placeholder="Base">
+    <button class="botao" type="button" onclick="questao5()">Calcular</button>
+    <p id='resposta10'></p>
+    
+    <h2 id="quest6">QUESTÃO 6</h2>
+    <hr>
+    <p>Digite uma temperatura em celsius para ve-la em kelvin e fareheight </p>
+    <input class="inputstilo" type="number" id="inputtemperatura" placeholder="ex: 32">
+    <button class="botao" type="button" onclick="questao6()">Calcular</button>
+    <p id='resposta11'></p>
+    <p id='resposta12'></p>
+    
+    <h2 id="quest7">QUESTÃO 7</h2>
+    <hr>
+    <p>Digite o valor de dois catetos de um triangulo e clique no botão para ver sua hipotenusa:</p>
+    <input class="inputstilo" type="number" id="inputcateto1" placeholder="ex: 5">
+    <input class="inputstilo" type="number" id="inputcateto2" placeholder="ex: 7">
+    <button class="botao" type="button" onclick="questao7()">Calcular</button>
+    <p id='resposta13'></p>
+
+    
+    <h2 id="quest8">QUESTÃO 8</h2>
+    <hr>
+    <p>Digite um valor em polegadas e clique no botão para converter em centimetros:</p>
+    <input class="inputstilo" type="number" id="inputpol" placeholder="ex: 5">
+    <button class="botao" type="button" onclick="questao8()">Calcular</button>
+    <p id='resposta14'></p>
+    
+    <h2 id="quest9">QUESTÃO 9</h2>
+    <hr>
+    <p>Digite uma palavra e clique no botão para ver seu tamanho:</p>
+    <input class="inputstilo" type="text" id="inputp" placeholder="ex: tamanho">
+    <button class="botao" type="button" onclick="questao9()">Calcular</button>
+    <p id='resposta15'></p>
+    
+    <h2 id="quest10">QUESTÃO 10</h2>
+    <hr>
+    <p>Digite um valor em metros e clique no botão para vê-lo em quilômetros, hectômetros, decâmetros, centímetros, decímetros e milímetros:</p>
+    <input class="inputstilo" type="text" id="inputmetro" placeholder="ex: 10">
+    <button class="botao" type="button" onclick="questao10()">Calcular</button>
+    <p id='resposta16'></p>
+    <p id='resposta17'></p>
+    <p id='resposta18'></p>
+    <p id='resposta19'></p>
+    <p id='resposta20'></p>
+    <p id='resposta21'></p>
+
+    <h2 id="quest11">QUESTÃO 11</h2>
+    <hr>
+    <p>Digite um número inteiro para ver se ele é par ou ímpar:</p>
+    <input class="inputstilo" type="number" id="inputnum" placeholder="ex: 10">
+    <button class="botao" type="button" onclick="questao11()">Calcular</button>
+    <p id='resposta22'></p>
+    
+    <h2 id="quest12">QUESTÃO 12</h2>
+    <hr>
+    <p>Digite dois números inteiros e clique no botão para ver se o segundo é multiplo do primeiro:</p>
+    <input class="inputstilo" type="number" id="inputnumero1" placeholder="Primeiro número">
+    <input class="inputstilo" type="number" id="inputnumero2" placeholder="Segundo número">
+    <button class="botao" type="button" onclick="questao12()">Calcular</button>
+    <p id='resposta23'></p>
+    
+    <h2 id="quest13">QUESTÃO 13</h2>
+    <hr>
+    <p>Digite um número qualquer e clique no botão para ver se ele é positivo, neutro ou negativo:</p>
+    <input class="inputstilo" type="number" id="inputnumint" placeholder="ex: 10">
+    <button class="botao" type="button" onclick="questao13()">Calcular</button>
+    <p id='resposta24'></p>
+    
+    <h2 id="quest14">QUESTÃO 14</h2>
+    <hr>
+    <p>Digite uma idade e clique no botão para ver se essa pessoa é uma criança, adolescente, adulto ou idoso</p>
+    <input class="inputstilo" type="number" id="inputidade" placeholder="ex: 32">
+    <button class="botao" type="button" onclick="questao14()">Calcular</button>
+    <p id='resposta25'></p>
+    
+    <h2 id="quest15">QUESTÃO 15</h2>
+    <hr>
+    <p>Digite o valor dos três lados de um triângulo e clique no botão para ver se ele é equilátero, isósceles ou escaleno</p>
+    <input class="inputstilo" type="number" id="inputlado1" placeholder="lado 1">
+    <input class="inputstilo" type="number" id="inputlado2" placeholder="lado 2">
+    <input class="inputstilo" type="number" id="inputlado3" placeholder="lado 3">
+    <button class="botao" type="button" onclick="questao15()">Calcular</button>
+    <p id='resposta26'></p>
+    
+    <h2 id="quest16">QUESTÃO 16</h2>
+    <hr>
+    <p>Digite o valor de três números inteiros e clique no botão para ver qual é maior: </p>
+    <input class="inputstilo" type="number" id="qnumero1" placeholder="ex: 10">
+    <input class="inputstilo" type="number" id="qnumero2" placeholder="ex: 20">
+    <input class="inputstilo" type="number" id="qnumero3" placeholder="ex: 50">
+    <button class="botao" type="button" onclick="questao16()">Calcular</button>
+    <p id='resposta27'></p>
+
+    <h2 id="quest17">QUESTÃO 17</h2>
+    <hr>
+    <p>Digite o valor de três números inteiros e clique no botão para ver qual é maior e o menor: </p>
+    <input class="inputstilo" type="number" id="q17numero1" placeholder="ex: 10">
+    <input class="inputstilo" type="number" id="q17numero2" placeholder="ex: 20">
+    <input class="inputstilo" type="number" id="q17numero3" placeholder="ex: 50">
+    <button class="botao" type="button" onclick="questao17()">Calcular</button>
+    <p id='resposta28'></p>
+    <p id='resposta29'></p>
+
+    <h2 id="quest18">QUESTÃO 18</h2>
+    <hr>
+    <p>Digite o valor de três números inteiros e clique no botão para ver qual não é o maior nem menor: </p>
+    <input class="inputstilo" type="number" id="q18numero1" placeholder="ex: 10">
+    <input class="inputstilo" type="number" id="q18numero2" placeholder="ex: 20">
+    <input class="inputstilo" type="number" id="q18numero3" placeholder="ex: 50">
+    <button class="botao" type="button" onclick="questao18()">Calcular</button>
+    <p id='resposta30'></p>
+    
+    <h2 id="quest19">QUESTÃO 19</h2>
+    <hr>
+    <p>Digite o dois numeros inteiros e um operador e clique no botão para fazer uma operação entre eles: </p>
+    <input class="inputstilo" type="number" id="q19numero1" placeholder="1° número">
+    <input class="inputstilo" type="number" id="q19numero2" placeholder="2° número">
+    <input class="inputstilo" type="text" id="q19operador" placeholder="Operador: +, -, *, /">
+    <button class="botao" type="button" onclick="questao19()">Calcular</button>
+    <p id='resposta31'></p>
+    
+    <h2 id="quest20">QUESTÃO 20</h2>
+    <hr>
+    <p>Digite o número de um mês para ver em qual trimestre esse se encontra: </p>
+    <input class="inputstilo" type="number" id="q20nummes" placeholder="ex: 4">
+    <button class="botao" type="button" onclick="questao20()">Calcular</button>
+    <p id='resposta32'></p>
+  </div>
+
+  <footer>
+    <a style="text-decoration: none; color: white;" href="#inicio"><p>Voltar ao inicio</p></a>
+    <br><br>
+    <p>Gustavo P Marcena@</p>
+  </footer>
+
+  <script src="questoes.js"></script>
+  
+</body>
+
+</html>
